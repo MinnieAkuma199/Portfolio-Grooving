@@ -78,11 +78,14 @@ h3 {
     flex-grow: 2rem;
 }
 
+.marketing:hover{
+        opacity: 0.2 ;
+    }
 /* I want image to enlarge when hovered over */
 .alien:hover{
     opacity: 0.2;
-    block-size: 4rem;
-    flex-grow: 2;
+    /* block-size: 4rem; */
+    
 }
 
 /* Create psuedoelement hover for email, so a textbox appears with email in it, create an id for email and go from there*/
@@ -109,13 +112,16 @@ footer {
 /* Paragraphs are all wonky*/
 @media screen and (max-width: 528px) {
     .move-left {
-        flex-wrap: wrap;
+        /* align-content: stretch; */
         
     }
     .move-right {
     }
     main {
         background-color: var(--pink);
+    }
+    .alien {
+        flex-grow: 4rem;
     }
 }
 /* Making name beautiful */
