@@ -18,7 +18,7 @@ header{
 }
 
 
-/* Manipulating nav bar, want to be horizontal */
+/* Manipulating nav bar */
 li {
     background-color: var(--pink);
     width: 2rem;
