@@ -8,14 +8,13 @@
     margin: 0;
     padding: 0;
     background-image: aliceblue;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
     /* box-sizing: border-box; */
+
 }
 
 header{
-
     margin-top: 2%;
-    flex-wrap: wrap;
 }
 /* Making name beautiful */
 .pretty {
@@ -44,7 +43,6 @@ header{
         }
 }
 /* Manipulating nav bar, want to be horizontal */
-/* TO DO STILL:I want the links to be hidden */
 li {
     background-color: var(--pink);
     width: 2rem;
@@ -71,12 +69,25 @@ main {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
+    background-color: #c0b8de;
+    /* display: flex;
+    justify-content: center; */
     
     
 }
 h3 {
-    text-align: left;
+    text-align: center;
 }
+/* I want image to enlarge when hovered over */
+.alien{
+    display: inline-block;
+}
+
+.alien:hover{
+    opacity: 0.2;
+    block-size: 4rem;
+}
+
 
 /* IDs for links in navbar */
 #Me{
