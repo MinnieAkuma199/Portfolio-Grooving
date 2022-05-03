@@ -1,14 +1,20 @@
+/* Variables to make life easy*/
+:root {
+    --pink: #eeb6c9;
+}
+
+/* Universal selector */
 * {
     margin: 0;
     padding: 0;
     background-image: aliceblue;
+    /* box-sizing: border-box; */
 }
-/* Maybe make a flexbox here for header- why is flexboc not working to get header all the way to the right */
+
 header{
-    display: flex;
+
     margin-top: 2%;
     flex-wrap: wrap;
-    ;
 }
 /* Making name beautiful */
 .pretty {
@@ -16,7 +22,7 @@ header{
     background-image: linear-gradient(-225deg,
         #8973d5 0%,
         #aa7bdc 29%,
-        #eeb6c9 67%,
+        var(--pink) 67%,
         #aa70c7 100%);
     /* background-size: auto auto;
     background-clip: border-box; */
@@ -37,32 +43,58 @@ header{
         }
 }
 /* Manipulating nav bar, want to be horizontal */
+/* TO DO STILL:I want the links to be hidden */
 li {
+    background-color: var(--pink);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1.5rem;
     display: inline;
-    justify-content: flex-start ;
+    justify-content: flex-start ; 
+}
+/* Used this to get name to the right */
+nav {    
+    padding-right: 30rem;
+    
+}
+/* Sizing all images on page */
+img {
+    min-width: 10rem;
+    max-width: 10rem;
+
+}
+
+/* Want to make main flexbox container */
+main {
     
 }
 
-nav {
-    border: #eeb6c9 1px dashed;
-    
-}
-
-
-
-
-
-
-
-/* IDs for link */
+/* IDs for links in navbar */
 #Me{
-
+    border: #8973d5 dashed 2px;
+    text-align: center;
 }
 
 #Work{
-
+    border: #8973d5 dashed 2px;
 }
 
 #Contact{
+    border: #8973d5 dashed 2px;
 
+}
+
+footer {
+    text-align: center;
+}
+ /*Media query for nav bar to stay nice*/
+@media screen and (min-width: 375px) {
+    nav {
+        position: fixed;
+    }
+    img {
+        display: inline;
+    }
+    
+    
 }
