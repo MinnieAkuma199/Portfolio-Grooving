@@ -1,6 +1,7 @@
 /* Variables to make life easy*/
 :root {
     --pink: #eeb6c9;
+    --border: #8973d5 dashed 2px;
 }
 
 /* Universal selector */
@@ -9,39 +10,14 @@
     padding: 0;
     background-image: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* box-sizing: border-box; */
 
 }
 
 header{
     margin-top: 2%;
 }
-/* Making name beautiful */
-.pretty {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-        #8973d5 0%,
-        #aa7bdc 29%,
-        var(--pink) 67%,
-        #aa70c7 100%);
-    /* background-size: auto auto;
-    background-clip: border-box; */
-    /* background-size: 200% auto; */
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-    text-align: right;
-    padding-right: 2rem;
-    justify-content: flex-end;
-    }
-    /* This keeps nav on the left */
-    @keyframes textclip {
-        to {
-            background-position: 200% center;
-        }
-}
+
+
 /* Manipulating nav bar, want to be horizontal */
 li {
     background-color: var(--pink);
@@ -49,7 +25,6 @@ li {
     height: 2rem;
     border-radius: 1.5rem;
     display: inline;
-    justify-content: flex-start ; 
 }
 /* Used this to get name to the right */
 nav {    
@@ -60,47 +35,70 @@ nav {
 img {
     min-width: 10rem;
     max-width: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2.5rem
 
 }
 
-/* Main is flexbox container */
+h2 {
+    padding-top: 1rem;
+}
+/* main is flexbox container */
 main {
-    position: relative;
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
     background-color: #c0b8de;
-    /* display: flex;
-    justify-content: center; */
-    
-    
+    display: flex;
+    flex-flow: column;
+
 }
-h3 {
-    text-align: center;
-}
-/* I want image to enlarge when hovered over */
-.alien{
-    display: inline-block;
+/* Looks the way i want it to in  */
+.move-left {
+    text-align: left;
+    margin-right: 20rem;
+    padding-left: 1rem;
+    /* flex-wrap: wrap; */
 }
 
+.move-right {
+    text-align: right;
+    margin-left: 20rem;
+    padding-right: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+
+
+h3 {
+    text-align: center;}
+/*When other images are added in this section this one should be 2x size */
+.alien {
+    flex-grow: 2rem;
+}
+
+/* I want image to enlarge when hovered over */
 .alien:hover{
     opacity: 0.2;
     block-size: 4rem;
+    flex-grow: 2;
 }
 
+/* Create psuedoelement hover for email, so a textbox appears with email in it, create an id for email and go from there*/
 
 /* IDs for links in navbar */
 #Me{
-    border: #8973d5 dashed 2px;
+    border: var(--border)
     
 }
 
 #Work{
-    border: #8973d5 dashed 2px;
+    border: var(--border)
 }
 
 #Contact{
-    border: #8973d5 dashed 2px;
+    border: var(--border)
 
 }
 
@@ -108,14 +106,38 @@ footer {
     text-align: center;
 }
 
- /* Media query to keep everything looking good */
-@media screen and (min-width: 375px) {
-    nav {
-        /* position: fixed; */
+/* Paragraphs are all wonky*/
+@media screen and (max-width: 528px) {
+    .move-left {
+        flex-wrap: wrap;
+        
     }
-    img {
-        display: inline;
+    .move-right {
     }
-    
-    
+    main {
+        background-color: var(--pink);
+    }
+}
+/* Making name beautiful */
+.pretty {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #8973d5 0%,
+            #aa7bdc 29%,
+            var(--pink) 67%,
+            #aa70c7 100%);
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 2rem;
+    justify-content: flex-end;
+}
+
+/* This keeps nav on the left */
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
