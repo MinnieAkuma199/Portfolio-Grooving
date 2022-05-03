@@ -12,7 +12,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-
 header{
     margin-top: 2%;
 }
@@ -54,50 +53,46 @@ main {
     flex-flow: column;
 
 }
-/* Looks the way i want it to in  */
-.move-left {
-    text-align: left;
-    margin-right: 20rem;
-    padding-left: 1rem;
-    /* flex-wrap: wrap; */
-}
-
-.move-right {
-    text-align: right;
-    margin-left: 20rem;
-    padding-right: 1rem;
-    /* flex-wrap: wrap; */
-}
-
-
-
 h3 {
     text-align: center;}
+
+/* Work is now a parent container so i can manipulate alien */
+#Work {
+    border: var(--border);
+    display: flex;
+    flex-wrap:wrap;
+}
 /*When other images are added in this section this one should be 2x size */
+#Work h2 {
+    width: 100%;
+    text-align: center;
+}
+/* calling out a tag */
 .alien {
-    flex-grow: 2rem;
+    text-align: center;
+    width: 100%;
+    
+}
+.alien img {
+    max-width: unset;
+    width: 40%;
 }
 
 .marketing:hover{
         opacity: 0.2 ;
+        transform: scale(1.5, 1.5);
     }
 /* I want image to enlarge when hovered over */
-.alien:hover{
+.alien:hover img{
     opacity: 0.2;
-    /* block-size: 4rem; */
+    transform: scale(1.2, 1.2);
     
 }
-
-/* Create psuedoelement hover for email, so a textbox appears with email in it, create an id for email and go from there*/
 
 /* IDs for links in navbar */
 #Me{
     border: var(--border)
     
-}
-
-#Work{
-    border: var(--border)
 }
 
 #Contact{
@@ -109,19 +104,25 @@ footer {
     text-align: center;
 }
 
-/* Paragraphs are all wonky*/
+/* Looks the way i want it to in  */
+.move-left {
+    text-align: left;
+    margin-right: 50%;
+    padding-left: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+.move-right {
+    text-align: right;
+    margin-left: 50%;
+    padding-right: 1rem;
+    /* flex-wrap: wrap; */
+}
+
 @media screen and (max-width: 528px) {
-    .move-left {
-        /* align-content: stretch; */
-        
-    }
-    .move-right {
-    }
+
     main {
         background-color: var(--pink);
-    }
-    .alien {
-        flex-grow: 4rem;
     }
 }
 /* Making name beautiful */
