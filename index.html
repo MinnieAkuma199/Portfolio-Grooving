@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kris's Portfolio</title>
+    <!-- using googleFonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:wght@100&display=swap">
     <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
@@ -15,6 +17,7 @@
             <ul>
                 <li><a href="#Me"> Get To Know Me</a></li>
                 <li><a href="#Work"> My Work</a></li>
+                <li><a href="#Resume"> Resume</a></li>
                 <li><a href="#Contact"> Contact Me</a></li>
 
             </ul>
@@ -29,28 +32,57 @@
             <img  src="./Images/Website profilepic.png" alt="Female sitting in a chair dressed in beige">
             <p class="move-left">Hiya, my name is Kristyn but I go by Kris. I have had one spectacular journey to get here. I got my
                 Bachelors in Integrative Physiology at CU Boulder. There I had some amazing experiences such as dissecting cadavers
-                and leading medical trips abroad. Life has taken me now to the realm of tech and I look forward to using the
+                and leading medical trips abroad. I also worked in the medical industry for the past 2 years. Life has taken me now to the realm of tech and I look forward to using the
                 experiences I have to better prepare me for this next challenge</p>
             <img src="./Images/Minniepic.png" alt="Young female with small dog in lap and foliage all around">
             <p class="move-right">As you can see I have a best friend. Her name is Minnie Mouse, and yet I never particularly fangirled over Disney. What can you do when your dog just looks like a perfect mouse? I feel so grateful to have amazing people and an amazing pooch by my side no matter what. I hope you can see why my passion is still going strong.</p>
         </section>
-        <!-- need a flex below for picture to grow and shrink dynamically so that is within #Work-->
+    <!-- Work is a flexbox container so i can manipulate projects -->
         <section id="Work">
-            <h2>Click on the pictures below for my work</h2>
+            <h2>Click below for my work</h2>
             <!-- Images are links to deployed sites -->
-        <a class="alien" href="https://minnieakuma199.github.io/They-have-come/">
-            <img src="https://www.ocregister.com/wp-content/uploads/migration/kpl/kplj2f-151016spnaroundthecorner1large.jpg?w=1200" alt="alien face with eyes facing the viewer">
+        <a class="eventListeners" href="https://du-event-listeners.herokuapp.com/">
+            <img src="./Images/Event-Listeners-gif.gif"
+                alt="Gif of website functionality">
+                <p>MERN stack with React front end and GraphQL API</p>
         </a>
-        <a class="marketing" href="https://minnieakuma199.github.io/Marketing-Website/">
-            <img src="./Images/search-engine-optimization.jpg" alt="laptop and notebook with seo and colorful diagram explaining">
+        
+        <a class="scrolloDeck" href="https://dry-crag-90231.herokuapp.com/">
+            <img src="./Images/scrolloDeck.gif"
+                alt="Gif of website functionality">
+                <p>SERN stack application</p>
+        </a>
+        <a class="" href="https://restful-to-graphql.herokuapp.com/">
+            <img src="./Images/Graphql-gif.gif"
+                alt="Gif of website functionality">
+                <p>Refactoring RESTful API to GraphQL</p>
+        </a>
+        <a class="" href="https://kd-note-taker.herokuapp.com/">
+            <img src="./Images/Note-taker.png" alt="Gif of website functionality">
+            <p>Express backend</p>
+        </a>
+        <a class="" href="https://minnieakuma199.github.io/Work-Scheduler/">
+            <img src="./Images/Work-day-scheduler.png" alt="Gif of website functionality">
+            <p>Bootstrap & JQuery</p>
+        </a>
+        <a class="" href="https://minnieakuma199.github.io/Weather_Tracker/">
+            <img src="./Images/weather-tracker.png" alt="Gif of website functionality">
+            <p>OpenWeatherMap RESTful API</p>
         </a>
         </section>
+        
+        <section id="Resume">
+            <h3>Resume</h3>
+            <a href="./Images/Resume-for-website.pdf">👉Click here for my Resume👈</a>
+        </section>
+        
         <section id="Contact">
         <h3>Contact links HERE 👇</h3>
         <a href="https://github.com/MinnieAkuma199?tab=repositories">GitHub</a>
         <a href="https://www.linkedin.com/in/kristyn-del-campo-banrevy-8060b2197/">LinkedIn</a>
         <a href="mailto:kristyndcb@gmail.com">Email</a>
         </section>
+
     </main>
 
     <footer>
