@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     background-image: aliceblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif
 
 }
 header{
@@ -56,38 +56,38 @@ main {
 h3 {
     text-align: center;}
 
-/* Work is now a parent container so i can manipulate alien */
+/* Work is now a parent container so i can manipulate projects */
 #Work {
     border: var(--border);
     display: flex;
     flex-wrap:wrap;
 }
-/*When other images are added in this section this one should be 2x size */
+
 #Work h2 {
     width: 100%;
     text-align: center;
 }
-/* calling out a tag */
-.alien {
+
+ .eventListeners {
     text-align: center;
     width: 100%;
     
 }
-.alien img {
+.eventListeners img {
     max-width: unset;
     width: 40%;
-}
+} 
 
-.marketing:hover{
+img:hover{
         opacity: 0.2 ;
         transform: scale(1.5, 1.5);
     }
 /* I want image to enlarge when hovered over */
-.alien:hover img{
+/* .alien:hover img{
     opacity: 0.2;
     transform: scale(1.2, 1.2);
     
-}
+} */
 
 /* IDs for links in navbar */
 #Me{
@@ -98,6 +98,10 @@ h3 {
 #Contact{
     border: var(--border)
 
+}
+
+#Resume {
+    border: var(--border)
 }
 
 footer {
