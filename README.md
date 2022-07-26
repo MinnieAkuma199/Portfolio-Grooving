@@ -14,5 +14,6 @@ You can find an example of my original mockup before I started programming the w
 Original Design:
 ![alt text](./Images/Website_mockup.png)
 
-Deployed Portfolio:
+[Deployed Portfolio:](https://minnieakuma199.github.io/Portfolio-Grooving/)
+
 ![alt text](./Images/Portfolio.gif)
